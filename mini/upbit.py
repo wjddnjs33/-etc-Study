@@ -16,8 +16,6 @@ Name = 'KRW-STORJ'
 Price = 50
 add_money = 15
 
-# 첫 매수를 통해 최고점 금액을 미리 정함.
-# 여기서 정해진 first_price 변수가 사용되는 곳은 다음 매수부터 first_price 가격보다 비싸게 사지 않기 위함.
 first_price = 0
 def first_p():
     global first_price
@@ -100,6 +98,8 @@ def keep():
             pass
 
 if __name__ == '__main__':
+    # condition 변수에는 특정 코인에 현재 가격이 들어감.
+    # 해당 변수는 매수를 하는데 있어서 해당 가격보다 비싼 가격때에는 사지 않기 하기 위함.
     condition = pyupbit.get_current_price(Name)
 
     first_p()
