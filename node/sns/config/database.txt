@@ -1,0 +1,26 @@
+CREATE DATABASE pro;
+
+USE pro;
+
+CREATE TABLE users ( 
+    num INTEGER NOT NULL, 
+    name VARCHAR(50) NOT NULL, 
+    id VARCHAR(255) NOT NULL, 
+    pw VARCHAR(64) NOT NULL,
+    D DATETIME NOT NULL,
+    image varchar(300),
+    Following varchar(300),
+    Followers varchar(300),
+    PRIMARY KEY (num) 
+);
+
+CREATE TABLE post ( 
+    num INTEGER NOT NULL,
+    id varchar(50) NOT NULL,
+    title varchar(255),
+    content varchar(10000),
+    Date DATETIME,
+    image varchar(300)
+    PRIMARY KEY (num)
+);
+
