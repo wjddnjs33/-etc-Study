@@ -1,0 +1,11 @@
+{
+    "name": "FLAG",
+    "value": "pocas{fakeflag}",
+    "domain": "host1.dreamhack.games",
+    "path": "/",
+    "expires": 1,
+    "size": 16,
+    "httpOnly": false,
+    "secure": false,
+    "session": false
+}
